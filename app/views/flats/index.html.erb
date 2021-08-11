@@ -1,0 +1,8 @@
+<h1> Simple Airbnb </h1>
+<ol>
+<li>
+<% @flats.each do |f| %>
+  <%= link_to f.name, flat_path(f) %>
+<% end %>
+</li>
+</ol>
